@@ -1,0 +1,62 @@
+<b>Welcome to the Institut Curie Bioinformatics Core Facility !<br></b>
+
+{% for repo in site.github.public_repositories %}
+{% assign total = total | plus: 1 %}
+{% endfor %}
+
+<span>
+This is the home page of our <a href="https://github.com/bioinfo-pf-curie">Github organisation</a> which currently contains <b>{{ total }}</b> public repositories.
+</span>
+
+<br>
+Here is a few links organized by topics to help you browsing the different types of projects we are working on:
+<br></br>
+
+<!--
+{% for topics in site.topics %}
+{% endfor %}
+-->
+
+<a class="link link--button" href="topics/nf" title="nextflow">
+  <center>
+    <img src="assets/images/nextflow.png" heigh="50px" width="250px" alt="nextflow" />
+  </center>
+</a>
+
+<a class="link link--button" href="topics/pipelines" title="pipelines">
+   <center>
+     <img src="assets/images/pipelines.png" heigh="50px" width="300px" alt="pipelines" />
+   </center>
+</a>
+
+<a class="link link--button" href="topics/R" title="R">
+  <center>
+    <img src="assets/images/Rlogo.png" heigh="50px" width="50px" alt="R" />
+  </center>
+</a>
+
+<a class="link link--button" href="topics/mpi" title="mpi">
+  <center>
+    <img src="assets/images/mpi.png" heigh="50px" width="70px" alt="mpi" />
+  </center>
+</a>
+
+<a class="link link--button" href="topics/proteomic" title="proteomic">
+  <center>
+    <img src="assets/images/proteomic.png" heigh="50px" width="200px" alt="proteomic" />
+  </center>
+</a>
+
+<a class="link link--button" href="topics/analysis" title="analysis">
+  <center>
+    <img src="assets/images/analysis.png" heigh="50px" width="220px" alt="analysis" />
+  </center>
+</a>
+
+<a class="link link--button" href="topics/training" title="mpi">
+  <center>
+    <img src="assets/images/training.png" heigh="50px" width="150px" alt="training" />
+  </center>
+</a>
+ 
+  

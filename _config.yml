@@ -1,0 +1,24 @@
+title: Institut Curie Bioinformatics Core Facility
+email: nicolas.servant@curie.fr
+logo: "curie.svg"
+logo_url: "http://curie.fr"
+baseurl: "/bioinfo-pf-curie"
+url: "https://github.com/bioinfo-pf-curie" 
+github_username: nservant
+repository: "bioinfo-pf-curie/bioinfo-pf-curie.github.io"
+
+theme: minima
+
+exclude:
+- README.md
+- LICENSE
+
+collections:
+  topics:
+    output: true
+
+# Plugins
+plugins:
+  - jekyll-github-metadata
+  - jekyll-feed
+  - jekyll-seo-tag
