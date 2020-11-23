@@ -19,15 +19,10 @@ layout: default
   
   <ul class="list  list--sites" id="sites">
     {% for repo in site.github.public_repositories %}
-    {% if repo.description contains "data analysis" %}
+    {% if repo.description contains "Data analysis" %}
     
-    {% if repo.name contains "nf-core" %}
-    {% assign icon = "nfcore" %}
-    {% assign colour = "#00cc44" %}
-    {% else %}
     {% assign icon = "link" %}
     {% assign colour = "#ff6600" %}  
-    {% endif %}
     {% assign name = repo.name %}
     
     <li class="repo repo--site">
